@@ -1,6 +1,14 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
+
 export default function Nav() {
+  const router = useRouter();
+  const path = router.pathname;
+
   return (
-    <nav className="bg-black-800 border-black-500">
+    <nav className="bg-black-800 sticky top-0 border-black-500">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -35,45 +43,48 @@ export default function Nav() {
             </div>
             <div className="hidden sm:block sm:ml-6 ">
               <div className="flex space-x-8 ">
-                <a
-                  href="#"
-                  className="bg-gray-900 text-white px-5 py-2 rounded-md text-sm font-medium"
+                <Link
+                  href="/"
+                  className={path === '/' ? "active": "unactive"}
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link href="/about" className={path === '/about' ? "active": "unactive"}>
+                 About 
+                  </Link>
+                <Link
+                  href="/register"
+                  className={path === '/register' ? "active": "unactive"}
+                >
+                  Register
+                </Link>
+                {/* <a
                   href="#"
                   className="text-gray-300 hover:border-orange-600 border-solid border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 
                 >
                   About
-                </a>
-                <a
+                </a> */}
+                {/* <Link
                   href="#"
-                  className="text-gray-300 hover:border-orange-600 border-solid border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className={path === '/committees' ? "active": "unactive"}
 
                 >
                   Committees
-                </a>
-                <a
+                </Link> */}
+                <Link
                   href="#"
-                  className="text-gray-300 hover:border-orange-600 border-solid border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className={path === '/sponsors' ? "active": "unactive"}
                 >
                   Sponsors
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="text-gray-300 hover:border-orange-600 border-solid border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                 Delegates 
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:border-orange-600 border-solid border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className={path === '/contact' ? "active": "unactive"}
 
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
