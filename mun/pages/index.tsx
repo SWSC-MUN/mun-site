@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -30,14 +31,12 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-center text-white m-2">
                 Registration is now open!
               </h2>
-              <a
-                href="https://forms.gle/6Z7Z7Z7Z7Z7Z7Z7Z7"
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                href="/register"
                 className="bg-orange-600 hover:bg-orange-400 text-white px-5 py-2 rounded-md text-m font-medium m-10"
               >
                 Register Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
