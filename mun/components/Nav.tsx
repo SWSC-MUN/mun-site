@@ -79,11 +79,11 @@ export default function Nav() {
                   Sponsors
                 </Link>
                 <Link
-                  href="#"
-                  className={path === '/contact' ? "active": "unactive"}
+                  href="/faq"
+                  className={path === '/faq' ? "active": "unactive"}
 
                 >
-                  Contact
+                 FAQ 
                 </Link>
               </div>
             </div>

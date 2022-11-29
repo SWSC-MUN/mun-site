@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import Link from "next/link";
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,7 +12,6 @@ export default function Home() {
         <meta name="description" content="SWSC Model United Nations" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
 
       <Nav />
       <main className={styles.main}>
@@ -53,23 +51,55 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-black mb-10">
               Letter from the Secretary General
             </h1>
+            <h2 className="text-2xl font-bold text-black">Dear Delegates,</h2>
+            <br />
             <h2 className="text-2xl font-bold text-black">
-              Dear Delegates,
+              Dear delegates and advisors, It is with great pride and excitement
+              that we formally invite you to the Southwestern State College's
+              annual Model United Nations Conference! <br/> <br/>
+              SWSCMUN 
+              is a premier Model UN conference in which students from all over
+              the Nepal come together to solve the most pressing issues facing
+              society today.<br/> <br/> This year’s conference will be held from 21th to 23th 
+              January, 2023, in-person. At its core, SWSCMUN 
+              is planned, organized, and directed by a passionate and ambitious
+              team of SWSC students that collectively form a diverse family of
+              academic backgrounds and experiences. Our chairs and staff
+              coordinate SWSCMUN’s committees from the ground up, posing
+              questions and controversies that even the most experienced
+              delegates will find challenging. Our dedicated Secretariat members
+              complement the chairs and staff by overseeing all conference
+              preparations, months in advance of the conference in order to
+              ensure that our delegates walk away with one of the greatest
+              experiences of their lives. In previous years, SWSCMUN delegates
+              grappled with complicated human rights, economic, and
+              environmental topics such as the "placeholder" argued the
+              pros and cons of nuclear energy in the International Atomic Energy
+              Agency, and even reacted to a flurry of assassinations witnessed
+              in the Historical Committee! Attendees also enjoyed inspiring
+              keynote addresses by Nazli Choucri, Professor of Political Science
+              at MIT and leading researcher in international relations and cyber
+              politics, as well as Richard B. Freeman, Faculty co-Director of
+              the Labor and Worklife Program at the Harvard Law School.
+              Delegates also enjoyed a well-deserved respite at the Delegate
+              Dance social night. We pride ourselves in hosting smaller
+              committee sizes. This allows our attendees more freedom to
+              contribute and distinguish themselves in their individual
+              committee sessions. MITMUNC offers its attendees a truly unique
+              opportunity to immerse themselves in a demanding intellectual
+              environment, exposed to the ideas of others and tasked to employ
+              the art of negotiation to pass meaningful resolutions. Having
+              experienced MITMUNC as chairs, then as Secretariat members and
+              Secretaries-General, we are both humbled and thrilled to guide
+              MITMUNC into its best conference yet. I now invite you to explore
+              our brand new website to learn more about our conference. Do not
+              hesitate in contacting us should you encounter any doubts along
+              the way. Best of luck in the path ahead! Sincerely, Jo Nikolova
+              and Diane Zhang Secretaries-General MIT Model United Nations
+              Conference XV 2023
             </h2>
-            <br/>
-            <h2 className="text-2xl font-bold text-black">
-              It is my great pleasure to welcome you to the 2022 SWSC-MUN. I am
-              honored to serve as the Secretary General of this conference. I am
-              confident that this conference will be a great success and will be
-              a memorable experience for all of us. I am looking forward to
-              meeting you all in December.
-            </h2>
-            <h2 className="text-2xl font-bold text-black">
-              Sincerely,
-            </h2>
-            <h2 className="text-2xl font-bold text-white">
-              Secretary General
-            </h2>
+            <h2 className="text-2xl font-bold text-black">Sincerely,</h2>
+            <h2 className="text-2xl font-bold text-white">Secretary General</h2>
           </div>
           <div></div>
         </div>
@@ -96,27 +126,27 @@ export default function Home() {
         <div className="bg-black-900 bg-opacity-50 w-screen p-10">
           <div className="grid grid-cols-3 justify-center h-full">
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-5xl font-bold text-center text-white">
+              <h1 className="text-3xl font-bold text-center text-white">
                 Contact Us
               </h1>
-            <div className="flex mt-5">
-              <a href="https://www.facebook.com/SWSCMUN">
-                <Image
-                  src="/facebook.svg"
-                  alt="facebook"
-                  width={50}
-                  height={50}
-                />
-              </a>
-              <a href="https://www.instagram.com/SWSCMUN_">
-                <Image 
-                  src="/instagram.svg"
-                  alt="instagram"
-                  width={50}
-                  height={50}
-                />
+              <div className="flex mt-5">
+                <a href="https://www.facebook.com/SWSCMUN">
+                  <Image
+                    src="/facebook.svg"
+                    alt="facebook"
+                    width={50}
+                    height={50}
+                  />
                 </a>
-            </div>
+                <a href="https://www.instagram.com/SWSCMUN_">
+                  <Image
+                    src="/instagram.svg"
+                    alt="instagram"
+                    width={50}
+                    height={50}
+                  />
+                </a>
+              </div>
             </div>
             {/* <h2 className="text-2xl font-bold text-center text-white">
               Email:
