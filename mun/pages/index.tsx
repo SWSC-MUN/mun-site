@@ -52,9 +52,9 @@ export default function Home() {
               <h1 className="text-5xl font-bold text-black mb-10">
                 Letter from the Secretary General
               </h1>
-              <h2 className="text-2xl font-bold text-black">Dear Delegates,</h2>
+              <h2 className="text-xl font-bold text-black">Dear Delegates,</h2>
               <br />
-              <h2 className="text-2xl font-bold text-black">
+              <h2 className="text-xl font-bold text-black">
                 Dear delegates and advisors, It is with great pride and
                 excitement that we formally invite you to the Southwestern State
                 College's annual Model United Nations Conference! <br /> <br />
