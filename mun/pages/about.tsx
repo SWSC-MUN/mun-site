@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
+import  People  from "../components/People";
 export default function About() {
   return (
     <div className="relative">
@@ -19,9 +20,11 @@ export default function About() {
             </h1>
           </div>
         </div>
-        <div className="bg-white text-black p-10">
+        <div className="bg-white text-black sm:p-10 p-2">
           <div className="h-full">
-            <h1 className="text-5xl font-bold m-10">Who we are</h1>
+            <h1 className="text-5xl font-bold sm:m-10 m-5 mb-10 sm:text-center">
+              Who we are
+            </h1>
             {/* <h2 className="text-2xl font-bold m-10">But what is SWSC-MUN?</h2> */}
             <div>
               <p className="text-xl m-10">
@@ -37,11 +40,38 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="bg-white text-black p-10">
+        <div className="bg-white text-black sm:p-10 p-5">
           <div className="h-full">
-            <h1 className="text-5xl font-bold m-10">
+            <h1 className="text-5xl font-bold sm:m-10 mb-10 sm:text-center">
               The Brains behind it all
             </h1>
+          </div>
+          <div className="flex justify-center"> 
+
+            <People name="Puskar Dhami" imageUrl="/space-bg.jpg" post="General Secretary">
+              <h1>
+                Mr. Puskar is a BBA 3rd year student at Southwestern State College. 
+                He is the current Secretary General of SWSC-MUN. He is a kind and energic soul
+                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+              </h1>
+              </People>
+          </div>
+          <div className="sm:flex justify-center sm:m-10">
+            <People name="Sushant Shrestha" imageUrl="/space-bg.jpg" post="Deputy Secretary General">
+              <h1>
+                Mr. Sushant is a BBA 3rd year student at Southwestern State College.
+                He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul
+                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+              </h1>
+              </People>
+
+              <People name="Sushant Shrestha" imageUrl="/space-bg.jpg" post="Deputy Secretary General">
+              <h1>
+                <p>Mr. Sushant is a BBA 3rd year student at Southwestern State College.</p>
+                He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul
+                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+              </h1>
+              </People>
           </div>
         </div>
       </main>

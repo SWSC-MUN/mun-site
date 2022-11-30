@@ -73,7 +73,7 @@ export default function Nav() {
                   Committees
                 </Link> */}
                 <Link
-                  href="#"
+                  href="/sponsors"
                   className={path === '/sponsors' ? "active": "unactive"}
                 >
                   Sponsors
