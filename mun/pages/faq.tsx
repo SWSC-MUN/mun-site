@@ -1,5 +1,6 @@
 import Nav from "../components/Nav";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 
 
@@ -15,7 +16,7 @@ export default function FAQ() {
             <Nav />
             <main className="bg-white">
                 {/* the team picture is currently not aviabale */}
-                <div className="bg-[url('/team.jpg')] bg-center bg-fixed absolute w-screen h-screen blur-sm"></div>
+                <div className="bg-[url('/qna.jpg')] bg-center bg-fixed absolute w-screen h-screen blur-sm"></div>
                 <div className="bg-black bg-opacity-50 relative w-screen h-screen z-50">
                     <div className="flex flex-col justify-center items-center h-full">
                         <h1 className="text-5xl font-bold text-center text-white m-2">
@@ -54,6 +55,7 @@ export default function FAQ() {
                     </div>
                 </div>
                 </main>
+                <Footer/>
         </div>
         // make a accordion for the questions
 

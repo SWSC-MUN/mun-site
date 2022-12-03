@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 export default function Register() {
@@ -75,6 +76,7 @@ export default function Register() {
           </form>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
