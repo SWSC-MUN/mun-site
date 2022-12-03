@@ -47,17 +47,20 @@ export default function Home() {
           // Message from secretary general
         }
         <div className="bg-white w-screen border-b-4 border-white p-10 pt-20">
-          <div className="grid grid-cols-2">
-            <div className="h-full p-5">
-              <h1 className="text-5xl font-bold text-black mb-10">
+          <div className="grid sm:grid-cols-2">
+          <div className="w-full h-full flex items-center justify-center mb-24 p-10">
+            <Image src="/space-bg.jpg" alt="home" width={1000} height={1000} className="rounded-xl"/>
+          </div>
+            <div className="h-full p-2">
+              <h1 className="text-2xl font-bold text-black mb-10">
                 Letter from the Secretary General
               </h1>
-              <h2 className="text-xl font-bold text-black">Dear Delegates,</h2>
+              <h2 className="text-lg font-bold text-black">Dear Delegates,</h2>
               <br />
-              <h2 className="text-xl font-bold text-black">
+              <h2 className="text-lg font-bold text-black">
                 Dear delegates and advisors, It is with great pride and
                 excitement that we formally invite you to the Southwestern State
-                College's annual Model United Nations Conference! <br /> <br />
+                College&aposs annual Model United Nations Conference! <br /> <br />
               SWSCMUN is a premier Model UN conference in which students from
               all over the Nepal come together to solve the most pressing issues
               facing society. <br /> 
@@ -65,12 +68,9 @@ export default function Home() {
               23th January, 2023, in-person.today.
               </h2>
             </div>
-          <div className="w-full h-full flex items-center justify-center mb-24">
-            <Image src="/space-bg.jpg" alt="home" width={1000} height={1000} className="rounded-xl"/>
           </div>
-          </div>
-          <div className="h-full p">
-            <h2 className="text-2xl font-bold text-black">
+          <div className="h-full ">
+            <h2 className="text-lg font-bold text-black">
               <br /> <br />  At its core, SWSCMUN is planned,
               organized, and directed by a passionate and ambitious team of SWSC
               students that collectively form a diverse family of academic
@@ -83,7 +83,7 @@ export default function Home() {
               walk away with one of the greatest experiences of their lives. In
               previous years, SWSCMUN delegates grappled with complicated human
               rights, economic, and environmental topics such as the
-              "placeholder" argued the pros and cons of nuclear energy in the
+              placeholder argued the pros and cons of nuclear energy in the
               International Atomic Energy Agency, and even reacted to a flurry
               of assassinations witnessed in the Historical Committee! Attendees
               also enjoyed inspiring keynote addresses by Nazli Choucri,
@@ -132,9 +132,9 @@ export default function Home() {
         {
           // Contact
         }
-        <div className="bg-black-900 bg-opacity-50 w-screen p-10">
-          <div className="grid grid-cols-3 justify-center h-full">
-            <div className="flex flex-col justify-center items-center">
+        <div className="bg-black-900 bg-opacity-50 w-screen p-10 sm:pt-20">
+          <div className="grid sm:grid-cols-3 grid-rows-3 justify-center items-center sm:h-20">
+            <div className="flex flex-col justify-center items-center m-5">
               <h1 className="text-3xl font-bold text-center text-white">
                 Contact Us
               </h1>
@@ -157,7 +157,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center m-5">
               <h2 className="text-2xl font-bold text-center text-white">
                 Email:{" "}
                 <Link
@@ -176,13 +176,19 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center m-5">
               <h2 className="text-2xl font-bold text-center text-white">
                 Links
-                <div className="flex flex-col text-lg p-5 text-slate-400 ">
-
+                <div className="sm:hidden flex flex-col text-lg p-5 text-slate-400 ">
+                <Link href="/home" className="hover:text-slate-200">Home</Link>
                 <Link href="/sponsors" className="hover:text-slate-200">Sponsors</Link>
 
+                <Link href="/committees" className="hover:text-slate-200">Committee</Link>
+                <Link href="/about" className="hover:text-slate-200">About Us</Link>
+                </div>
+
+                <div className="hidden sm:flex flex-col text-lg p-5 text-slate-400 ">
+                <Link href="/sponsors" className="hover:text-slate-200">Sponsors</Link>
                 <Link href="/committees" className="hover:text-slate-200">Committee</Link>
                 </div>
               </h2>
@@ -194,6 +200,16 @@ export default function Home() {
             </h2>
             <h2 className="text-2xl font-bold text-center text-white"></h2> */}
           </div>
+          <pre className="text-slate-300 text-center text-sm">
+            <h1>© 2021 SWSC-MUN. All rights reserved.</h1>
+
+            <h1>
+              <pre className="text-slate-300 text-center text-sm">
+                #[derived] with ❤️ by <Link  className="hover:text-white" href="https://github.com/Croxx">Sarad</Link>
+                </pre>
+            </h1>
+
+          </pre>
         </div>
       </main>
     </div>
