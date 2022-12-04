@@ -35,7 +35,7 @@ impl DB{
         }
     }
     pub async fn insert_delegates (&self, form: web::Form<User>) -> mongodb::error::Result<()>{
-        let db = self.client.database("mun");
+        let db = self.client.database("MUN-DELEGATES");
         let coll = db.collection("delegates");
         coll.insert_one(form.into_inner(), None).await?;
         Ok(())
