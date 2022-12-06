@@ -5,7 +5,7 @@ use actix_web::{get, App, HttpServer,web, Responder};
 
 
 #[get("/api/data")]
-async fn data(db: web::Data<DB>, form: web::Form<User>) -> impl Responder {
+async fn data(db: web::Data<DB>, form: web::Json<User>) -> impl Responder {
     match db.insert_delegates(form).await {
         Ok(_) => "Success",
         Err(_) => "Failed",

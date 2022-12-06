@@ -42,7 +42,7 @@ export default function Footer() {
               <h2 className="text-2xl font-bold text-center text-white mt-4">
                 Phone: {""}
                 <Link
-                  href="phone:123456789"
+                  href="phone:9862485491"
                   className="text-lg text-blue-600 hover:text-blue-900">123456</Link>
               </h2>
             </div>

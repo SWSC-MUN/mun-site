@@ -24,10 +24,10 @@ export default function Home() {
           <div className="bg-black bg-opacity-50 absolute top-0 w-screen h-screen z-20">
             <div className="flex flex-col justify-center items-center h-full mt-5">
               <h1 className="text-5xl font-bold font-900 text-center text-white m-2 font-pop">
-                Welcome to the SWSC-MUN MMXXII
+                Welcome to the SWSC-MUN MMXXIII
               </h1>
               <h2 className="text-2xl font-bold text-center text-white m-2">
-                MMXXII SWSC-MUN will be held on 21th to 23th of December, 2022
+                SWSC-MUN MMXXIII  will be held on 19th to 21th of January, 2023
               </h2>
               <h2 className="text-2xl font-bold text-center text-white m-2">
                 Registration is now open!

@@ -21,8 +21,20 @@ pub struct User{
     pub committee: String,
     pub position: String,
     pub phone: i32,
+    pub payment: Khalti,
 }
 
+// payment details
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct Khalti{
+    pub idx: String,
+    pub amount: i32,
+    pub mobile: String,
+    pub product_identity: String,
+    pub product_name: String,
+    pub product_url: String,
+    pub token: String,
+}
 
 impl DB{
     pub async fn new() -> Self{

@@ -1,6 +1,50 @@
 import Head from "next/head";
+import Butonkh from "../components/Butonkh";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+
+
+// the field's in the form
+// has to be typed because of the way the form is handled
+
+interface RegistrationElements extends HTMLFormElement {
+  first: HTMLInputElement;
+  middle?: HTMLInputElement;
+  last: HTMLInputElement;
+  email: HTMLInputElement;
+  school: HTMLInputElement;
+  country: HTMLInputElement;
+  committee: HTMLInputElement;
+  position: HTMLInputElement;
+  phone: HTMLInputElement;
+}
+
+// the response from the Khalti API when the payment is successful
+// consult the Khalti API docs for more info
+
+interface KhaltiSuccessResponse {
+  idx: string;
+  amount: number;
+  mobile: string;
+  product_identity: string;
+  product_name: string;
+  product_url: string;
+  token: string;
+}
+
+const handleSubmit = (props: HTMLFormElement) => {
+  const regEl = props as RegistrationElements;
+  console.log(regEl.first.value);
+}
+
+const handleKhalti = (KhaltiResp: KhaltiSuccessResponse) => {
+  console.log(KhaltiResp);
+}
+
+// for testing purposes
+// const handleKhalti = () => {
+//   console.log("Working");
+// }
 
 export default function Register() {
   return (
@@ -19,7 +63,10 @@ export default function Register() {
           Register for SWSC-MUN MMXXII
         </h1>
         <div className="flex justify-center w-screen items-center bg-black m-0.5 p-2 sm:m-10 sm:p-10 rounded-md border-slate-700 max-w-fit">
-          <form action="/api/data" className="flex flex-col justify-between items-center" method="post">
+          <form onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit(e.currentTarget)
+          }} className="flex flex-col justify-between items-center" method="post">
             <div className="m-5">
 
               <label className="block mr-10 text-base" htmlFor="first">First name *</label>
@@ -27,8 +74,8 @@ export default function Register() {
             </div>
 
             <div className="m-5">
-              <label className="block mr-10 text-base" htmlFor="email">Middle name</label>
-              <input type="text" placeholder="Middle name" className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="email" />
+              <label className="block mr-10 text-base" htmlFor="middle">Middle name</label>
+              <input type="text" placeholder="Middle name" className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="middle" />
             </div>
 
             <div className="m-5">
@@ -67,6 +114,10 @@ export default function Register() {
               <input type="number" placeholder="Phone Number" required className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="phone" />
             </div>
 
+            <Butonkh f={handleKhalti}/>
+
+
+
             <div className="m-5 self-start">
               <h1 className="block text-lg text-red-600">
                 Fields marked with * are required
@@ -75,8 +126,8 @@ export default function Register() {
             <button className="rounded border-black-400 bg-orange-600 max-w-fit p-3 hover:bg-orange-400 text-lg" type="submit">Submit</button>
           </form>
         </div>
-      </div>
-      <Footer/>
-    </div>
+      </div >
+      <Footer />
+    </div >
   );
 }
