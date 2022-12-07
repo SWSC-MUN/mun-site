@@ -11,3 +11,4 @@ actix-web = {version = "4.2.1", features = ["rustls"]}
 mongodb = "2.3.1"
 "dotenv" = "0.15.0"
 "serde" = {version = "1.0.130", features = ["derive"]}
+actix-cors = "0.6.4"

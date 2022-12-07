@@ -1,6 +1,5 @@
 import axios from "axios";
 import Head from "next/head";
-import Butonkh from "../components/Butonkh";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
@@ -21,24 +20,7 @@ interface RegistrationElements extends HTMLFormElement {
   phone: HTMLInputElement;
 }
 
-// the response from the Khalti API when the payment is successful
-// consult the Khalti API docs for more info
-
-interface KhaltiSuccessResponse {
-  idx: string;
-  amount: number;
-  mobile: string;
-  product_identity: string;
-  product_name: string;
-  product_url: string;
-  token: string;
-}
-
 const handleSubmit = (props: HTMLFormElement) => {
-  if (!khaltied) {
-    alert("Please pay the registration fee");
-    return;
-  }
   const regEl = props as RegistrationElements;
   const obj = {
     first: regEl.first.value,
@@ -50,11 +32,9 @@ const handleSubmit = (props: HTMLFormElement) => {
     committee: regEl.committee.value,
     position: regEl.position.value,
     phone: regEl.phone.value,
-    khalti: khalti
   }
-  console.log(obj);
   let result = JSON.stringify(obj);
-  axios.post("/api/data", result)
+  axios.post("https://croxxn-improved-goggles-v7qw9q795vpfxgqq-8000.preview.app.github.dev/", result)
   .then((res) => {
     console.log(res);
   }
@@ -65,18 +45,6 @@ const handleSubmit = (props: HTMLFormElement) => {
   )
 }
 
-let khaltied = false;
-let khalti: KhaltiSuccessResponse;
-
-const handleKhalti = (KhaltiResp: KhaltiSuccessResponse) => {
-  khalti = KhaltiResp;
-  khaltied = true;
-}
-
-// for testing purposes
-// const handleKhalti = () => {
-//   console.log("Working");
-// }
 
   return (
     <div className="sm:relative">
@@ -145,7 +113,6 @@ const handleKhalti = (KhaltiResp: KhaltiSuccessResponse) => {
               <input type="number" placeholder="Phone Number" required className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="phone" />
             </div>
 
-            <Butonkh f={handleKhalti}/>
 
 
 

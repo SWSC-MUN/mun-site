@@ -72,9 +72,9 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="h-full ">
+          <div className="h-full sm:p-10">
             <h2 className="text-lg font-bold text-black">
-              <br /> <br />  At its core, SWSCMUN is planned,
+              <p> At its core, SWSCMUN is planned,
               organized, and directed by a passionate and ambitious team of SWSC
               students that collectively form a diverse family of academic
               backgrounds and experiences. Our chairs and staff coordinate
@@ -91,7 +91,8 @@ export default function Home() {
               of assassinations witnessed in the Historical Committee! Attendees
               also enjoyed inspiring keynote addresses by Nazli Choucri,
               Professor of Political Science at SWSC and leading researcher in
-              international relations and cyber politics, as well as Richard B.
+              international relations and cyber politics, as well as Richard B.</p>
+              <br />
               Freeman, Faculty co-Director of the Labor and Worklife Program at
               the Harvard Law School. Delegates also enjoyed a well-deserved
               respite at the Delegate Dance social night. We pride ourselves in

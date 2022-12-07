@@ -11,7 +11,7 @@ export default function Sponsors() {
         </Head>
     
         <Nav />
-        <main className="top-0 m-0 bg-white sm:h-[55vh]">
+        <main className="top-0 m-0 pb-5 bg-white sm:h-[55vh]">
 
 
             {/* TO ANY FUTURE MF WORKING ON THIS PROJECT(PROLLY ME) DONOT REMOVE THIS
@@ -94,7 +94,7 @@ export default function Sponsors() {
                 </div>
             </div>*/}
             {/* <div>  */}
-                <div className="h-full">
+                <div className="h-full p-10">
 
                 <h1 className="font-pop text-5xl font-bold sm:m-10 m-5 mb-10 sm:text-center">
                     Sponsor Us
