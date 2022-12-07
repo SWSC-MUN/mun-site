@@ -1,9 +1,11 @@
+import axios from "axios";
 import Head from "next/head";
 import Butonkh from "../components/Butonkh";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 
+export default function Register() {
 // the field's in the form
 // has to be typed because of the way the form is handled
 
@@ -33,12 +35,42 @@ interface KhaltiSuccessResponse {
 }
 
 const handleSubmit = (props: HTMLFormElement) => {
+  if (!khaltied) {
+    alert("Please pay the registration fee");
+    return;
+  }
   const regEl = props as RegistrationElements;
-  console.log(regEl.first.value);
+  const obj = {
+    first: regEl.first.value,
+    middle: regEl.middle?.value,
+    last: regEl.last.value,
+    email: regEl.email.value,
+    school: regEl.school.value,
+    country: regEl.country.value,
+    committee: regEl.committee.value,
+    position: regEl.position.value,
+    phone: regEl.phone.value,
+    khalti: khalti
+  }
+  console.log(obj);
+  let result = JSON.stringify(obj);
+  axios.post("/api/data", result)
+  .then((res) => {
+    console.log(res);
+  }
+  )
+  .catch((err) => {
+    console.log(err);
+  }
+  )
 }
 
+let khaltied = false;
+let khalti: KhaltiSuccessResponse;
+
 const handleKhalti = (KhaltiResp: KhaltiSuccessResponse) => {
-  console.log(KhaltiResp);
+  khalti = KhaltiResp;
+  khaltied = true;
 }
 
 // for testing purposes
@@ -46,7 +78,6 @@ const handleKhalti = (KhaltiResp: KhaltiSuccessResponse) => {
 //   console.log("Working");
 // }
 
-export default function Register() {
   return (
     <div className="sm:relative">
       <Head>
