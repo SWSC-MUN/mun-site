@@ -10,7 +10,7 @@ export default function Footer() {
                 Contact Us
               </h1>
               <div className="flex mt-5">
-                <a href="https://www.facebook.com/SWSCMUN">
+                <a href="https://www.facebook.com/SWSCMUN" target="_blank" rel='noreferrer'>
                   <Image
                     src="/facebook.svg"
                     alt="facebook"
@@ -18,7 +18,7 @@ export default function Footer() {
                     height={50}
                   />
                 </a>
-                <a href="https://www.instagram.com/SWSCMUN_">
+                <a href="https://www.instagram.com/swsc_mun/" target="_blank" rel='noreferrer'>
                   <Image
                     src="/instagram.svg"
                     alt="instagram"
@@ -43,7 +43,7 @@ export default function Footer() {
                 Phone: {""}
                 <Link
                   href="phone:9862485491"
-                  className="text-lg text-blue-600 hover:text-blue-900">123456</Link>
+                  className="text-lg text-blue-600 hover:text-blue-900">986-2485491</Link>
               </h2>
             </div>
 

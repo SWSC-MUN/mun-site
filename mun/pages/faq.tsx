@@ -54,6 +54,35 @@ export default function FAQ() {
                         </div>
                     </div>
                 </div>
+                <div className="bg-white text-black p-10">
+                    <div className="h-full">
+                        <h1 className="text-5xl font-bold m-10">
+                            How to fill out the registration form?
+                        </h1>
+                        <div>
+                            <p className="text-xl m-10">
+                                1) Enter your name, email, and school. 
+                            </p>
+                            <p className="text-xl m-10">
+                                2) Select the country you would like to represent in MUN. Note that this is <b>NOT</b> your Nationality, but the country you would like to represent in MUN.
+                                </p>
+
+                            <p className="text-xl m-10">
+                                3) Select the committee you would like to join.
+                                The committee you select will be the topic you will be debating about.
+                                The aviabale committees are listed below.
+                                <br/>
+                                <ul>
+                                <li>-United Nations Security Council (UNSC)</li> 
+                                <li>-Disarmament and International Security Committee (DISEC)</li>
+                                <li>-World Health Organization (WHO)</li>
+                                <li>-Economic and Social Council (ECOSOC)</li>
+                                <li>-Food and Agriculture Organization (FAO)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 </main>
                 <Footer/>
         </div>

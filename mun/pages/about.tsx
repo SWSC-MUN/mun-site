@@ -11,13 +11,13 @@ export default function About() {
       </Head>
 
  
-      <div className="bg-black top-0 sm:fixed bg-fixed bg-center absolute z-50 left-0 w-screen ">
+      <div className="bg-black top-0 sm:fixed bg-fixed bg-top absolute z-50 left-0 w-screen ">
 
         <Nav />
       </div>
       <main className="bg-white">
         {/* the team picture is currently not aviabale */}
-        <div className="bg-[url('/team.jpg')] bg-center bg-fixed w-screen h-screen blur-sm"></div>
+        <div className="bg-[url('/dateam.jpg')] bg-center bg-fixed w-screen h-screen blur-sm"></div>
         <div className="bg-black bg-opacity-50 absolute top-0 w-screen h-screen z-20">
           <div className="flex flex-col justify-center items-center h-full">
             <h1 className="text-5xl font-bold text-center text-white m-2">
@@ -53,9 +53,9 @@ export default function About() {
           </div>
           <div className="flex justify-center"> 
 
-            <People name="Puskar Dhami" imageUrl="/gensec.jpg" post="General Secretary">
+            <People name="Puskar Singh Dhami" imageUrl="/gensec.jpg" post="General Secretary">
               <h1>
-                Mr. Puskar is a BBA 3rd year student at Southwestern State College. 
+                Mr. Puskar is a BBM 2nd year student at Southwestern State College. 
                 He is the current Secretary General of SWSC-MUN. He is a kind and energic soul
                 who loves to help people. He is a very good debater and has won many awards in debate competitions.
               </h1>
@@ -64,14 +64,15 @@ export default function About() {
           <div className="sm:flex justify-center sm:m-10">
               <People name="Usha Lama" imageUrl="/space-bg.jpg" post="Secretary">
               <h1>
-                <p>Mr. Sushant is a BBA 3rd year student at Southwestern State College.</p>
-                He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul
-                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+                <p>
+                  Miss. Usha is a Law 2nd year student at Southwestern State College.
+                  She is a passionate and hardworking student. She is a very good debater and has won many awards in debate competitions.
+                </p>
               </h1>
               </People>
           </div>
-          <div className="sm:flex justify-center m-10">
-            <People name="Nikita Dahal" imageUrl="/space-bg.jpg" post="Under Secretary General">
+          <div className="sm:flex justify-center sm:m-10">
+            <People name="Nikita Dahal" imageUrl="/nikita.jpg" post="Under Secretary General">
               <h1>
                 Mr. Sushant is a BBA 3rd year student at Southwestern State College.
                 He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul

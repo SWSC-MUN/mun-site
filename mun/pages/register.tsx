@@ -14,7 +14,8 @@ interface RegistrationElements extends HTMLFormElement {
   last: HTMLInputElement;
   email: HTMLInputElement;
   school: HTMLInputElement;
-  country: HTMLInputElement;
+  country1: HTMLInputElement;
+  country2: HTMLInputElement;
   committee: HTMLInputElement;
   position: HTMLInputElement;
   phone: HTMLInputElement;
@@ -28,13 +29,14 @@ const handleSubmit = (props: HTMLFormElement) => {
     last: regEl.last.value,
     email: regEl.email.value,
     school: regEl.school.value,
-    country: regEl.country.value,
+    country1: regEl.country1.value,
+    country2: regEl.country2.value,
     committee: regEl.committee.value,
     position: regEl.position.value,
     phone: regEl.phone.value,
   }
   let result = JSON.stringify(obj);
-  axios.post("https://croxxn-improved-goggles-v7qw9q795vpfxgqq-8000.preview.app.github.dev/", result)
+  axios.post("/api/data", result)
   .then((res) => {
     console.log(res);
   }
@@ -94,8 +96,13 @@ const handleSubmit = (props: HTMLFormElement) => {
             </div>
 
             <div className="m-5">
-              <label className="block mr-10 text-base" htmlFor="country">Country *</label>
-              <input type="text" placeholder="Country" required className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="country" />
+              <label className="block mr-10 text-base" htmlFor="country1">Country 1(Interested Country)*</label>
+              <input type="text" placeholder="Country" required className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="country1" />
+            </div>
+
+            <div className="m-5">
+              <label className="block mr-10 text-base" htmlFor="country2">Country 2(Other than the first Country)*</label>
+              <input type="text" placeholder="Country" required className="focus:outline-none p-2 rounded mt-2 sm:w-96" name="country2" />
             </div>
 
             <div className="m-5">
