@@ -7,11 +7,13 @@
 - Next.js
 - Tailwind CSS
 
-### Backend
+~~~### Backend
 
 - Rust (Actix Web, lettre)
 - MongoDB
 - Docker(maybe)
+~~~
+### No Backend lmao
 
 ## TODO
 
@@ -20,3 +22,7 @@
     - Integrate Lettre for email sending
     - Add animations
     - Add a status check page for the delegates
+
+- 19th December 2022:
+    - Completed the website
+    - Scrapped the backend idea

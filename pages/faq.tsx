@@ -73,6 +73,7 @@ export default function FAQ() {
                                 The aviabale committees are listed below.
                                 <br/>
                                 <ul>
+                                <li>-Federal Parliament Nepal(FPN)</li>
                                 <li>-United Nations Security Council (UNSC)</li> 
                                 <li>-Disarmament and International Security Committee (DISEC)</li>
                                 <li>-World Health Organization (WHO)</li>

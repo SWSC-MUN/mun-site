@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import  People  from "../components/People";
+import People from "../components/People";
 export default function About() {
   return (
     <div>
@@ -10,13 +10,12 @@ export default function About() {
         <meta name="description" content="About" />
       </Head>
 
- 
+
       <div className="bg-black top-0 sm:fixed bg-fixed bg-top absolute z-50 left-0 w-screen ">
 
         <Nav />
       </div>
       <main className="bg-white">
-        {/* the team picture is currently not aviabale */}
         <div className="bg-[url('/dateam.jpg')] bg-center bg-fixed w-screen h-screen blur-sm"></div>
         <div className="bg-black bg-opacity-50 absolute top-0 w-screen h-screen z-20">
           <div className="flex flex-col justify-center items-center h-full">
@@ -51,48 +50,41 @@ export default function About() {
               The Brains behind it all
             </h1>
           </div>
-          <div className="flex justify-center"> 
+          <div className="flex justify-center">
 
             <People name="Puskar Singh Dhami" imageUrl="/gensec.jpg" post="General Secretary">
               <h1>
-                Mr. Puskar is a BBM 2nd year student at Southwestern State College. 
-                He is the current Secretary General of SWSC-MUN. He is a kind and energic soul
-                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+                I am the secretary general Puskar Dhami pursuing Bachelor’s degree in business management in the 4th semester in bachelor in southwestern state college.
+                I am pleased and honored to introduce you to the Southwestern State College Model United Nations (SWSC MUN). Model United Nations also known as Model UN or MUN is an educational simulation and/or academic activity in which students can learn about diplomacy, international relations, and the United Nations
+                It will be a great pleasure to see you at the SWSCMUN conference.
               </h1>
-              </People>
-          </div>
-          <div className="sm:flex justify-center sm:m-10">
-              <People name="Usha Lama" imageUrl="/space-bg.jpg" post="Secretary">
-              <h1>
-                <p>
-                  Miss. Usha is a Law 2nd year student at Southwestern State College.
-                  She is a passionate and hardworking student. She is a very good debater and has won many awards in debate competitions.
-                </p>
-              </h1>
-              </People>
+            </People>
           </div>
           <div className="sm:flex justify-center sm:m-10">
             <People name="Nikita Dahal" imageUrl="/nikita.jpg" post="Under Secretary General">
               <h1>
-                Mr. Sushant is a BBA 3rd year student at Southwestern State College.
-                He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul
-                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+                I am Nikita Dahal, dedicated to swscmun as Under secretary general pursuing +2 degree in Science at southwestern state college.
+                I am glad to introduce you to the Southwestern State College Model United Nations (SWSC MUN).  As diplomacy, international relations, and the United Nations are burning topics,
+                We will come up with logics,debates and much more fun events to learn diplomacy, International Issues and United Nations at the MUN .Hope to see you at the SWSCMUN conference.
               </h1>
-              </People>
+            </People>
+          </div>
+          <div className="sm:flex justify-center sm:m-10">
 
-              <People name="Anuja Dhital" imageUrl="/space-bg.jpg" post="Under Secretary">
+            <People name="Anuja Dhital" imageUrl="/anuja.jpg" post="Under Secretary">
               <h1>
-                <p>Mr. Sushant is a BBA 3rd year student at Southwestern State College.</p>
-                He is the current Deputy Secretary General of SWSC-MUN. He is a kind and energic soul
-                who loves to help people. He is a very good debater and has won many awards in debate competitions.
+                <p>
+                  I am Anuja Dhital, acting as under secretary currently studying in at southwestern state college.
+                  SWSC-MUN is the platform where one can learn about the way United Nations works and how it is important for the world to be a better place.
+                  We actively try to solve real-world problems and come up with solutions to them.
+                </p>
               </h1>
-              </People>
-
+            </People>
 
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

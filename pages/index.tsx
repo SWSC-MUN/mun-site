@@ -87,19 +87,13 @@ export default function Home() {
               previous years, SWSCMUN delegates grappled with complicated human
               rights, economic, and environmental topics such as the
               placeholder argued the pros and cons of nuclear energy in the
-              International Atomic Energy Agency, and even reacted to a flurry
-              of assassinations witnessed in the Historical Committee! Attendees
-              also enjoyed inspiring keynote addresses by Nazli Choucri,
-              Professor of Political Science at SWSC and leading researcher in
-              international relations and cyber politics, as well as Richard B.</p>
-              <br />
-              Freeman, Faculty co-Director of the Labor and Worklife Program at
-              the Harvard Law School. Delegates also enjoyed a well-deserved
-              respite at the Delegate Dance social night. We pride ourselves in
-              hosting smaller committee sizes. This allows our attendees more
-              freedom to contribute and distinguish themselves in their
-              individual committee sessions. SWSCMUN offers its attendees a
-              truly unique opportunity to immerse themselves in a demanding
+              International Atomic Energy Agency. This year, the debate are going to even even intense. With
+              the Russian-Ukraine conflict, the ongoing pandemic, and the rise of powerful Artificial Intelligence systems, delegates 
+              will have a lot to discuss. 
+              </p>
+             <br/> 
+             <p>
+              SWSCMUN offers participants truly unique opportunity to immerse themselves in a demanding
               intellectual environment, exposed to the ideas of others and
               tasked to employ the art of negotiation to pass meaningful
               resolutions. Having experienced SWSCMUN as chairs, then as
@@ -110,6 +104,7 @@ export default function Home() {
               encounter any doubts along the way. Best of luck in the path
               ahead! Sincerely, Puskar Dhami Secretary-General
               SWSC Model United Nations Conference MMXXII 
+              </p>
             </h2>
             <div className="flex flex-col items-end mt-10 text-blue-600">
 

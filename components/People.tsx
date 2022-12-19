@@ -13,12 +13,12 @@ interface PeopleProps {
 
 const People: FC<PeopleProps> = (props) => {
     return (
-        <div className="max-w-md border-solid border-orange-600 rounded-lg border-2 sm:py-10 py-24 sm:px-5 m-5">
+        <div className="max-w-md border-solid border-orange-600 rounded-lg border-2 sm:py-10 py-24 sm:px-3 m-5">
             <div className='flex justify-center relative min-w-fit min-h-fit'>
 
                 <Image src={props.imageUrl} alt="Mr. Puskar Dhami"  width={250} height={200} className='rounded-full'/>
             </div>
-            <div className='m-5 mt-10 pl-3'>
+            <div className='m-4 mt-7 pl-3'>
 
             <h1 className="text-3xl text-orange-600 font-extrabold">
                 {props.name}

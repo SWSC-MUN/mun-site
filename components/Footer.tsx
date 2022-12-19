@@ -3,32 +3,32 @@ import Link from 'next/link';
 
 export default function Footer() {
     return(
-        <div className="bg-black-900 bg-opacity-50 w-screen p-10 sm:pt-20">
+        <div className="bg-black w-screen p-10 sm:pt-20">
           <div className="grid sm:grid-cols-3 grid-rows-3 justify-center items-center sm:h-20">
             <div className="flex flex-col justify-center items-center m-5">
               <h1 className="text-3xl font-bold text-center text-white">
                 Contact Us
               </h1>
               <div className="flex mt-5">
-                <a href="https://www.facebook.com/SWSCMUN" target="_blank" rel='noreferrer'>
+                <Link href="https://www.facebook.com/SWSCMUN" target="_blank" rel='noreferrer'>
                   <Image
                     src="/facebook.svg"
                     alt="facebook"
                     width={50}
                     height={50}
                   />
-                </a>
-                <a href="https://www.instagram.com/swsc_mun/" target="_blank" rel='noreferrer'>
+                </Link>
+                <Link href="https://www.instagram.com/swsc_mun/" target="_blank" rel='noreferrer'>
                   <Image
                     src="/instagram.svg"
                     alt="instagram"
                     width={50}
                     height={50}
                   />
-                </a>
+                </Link>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center m-5">
+            <div className="flex flex-col justify-center items-center m-2 sm:m-5">
               <h2 className="text-2xl font-bold text-center text-white">
                 Email:{" "}
                 <Link
@@ -47,7 +47,7 @@ export default function Footer() {
               </h2>
             </div>
 
-            <div className="flex justify-center items-center m-5">
+            <div className="flex justify-center items-center m-2 sm:m-5">
               <h2 className="text-2xl font-bold text-center text-white">
                 Links
                 <div className="sm:hidden flex flex-col text-lg p-5 text-slate-400 ">
